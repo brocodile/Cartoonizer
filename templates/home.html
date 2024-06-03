@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoonize Your World</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            display: flex;
+            flex-direction: column; /* Align elements vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #318CE7, #6AA4E8); /* Gradient background */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: White;
+            font-style: italic;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 1.0); /* White container with slight transparency */
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            height: 300px; /* Increased height to 600px */
+            animation: fadeIn 1s ease-in-out;
+            background-image: url('https://img.freepik.com/free-vector/cute-koala-with-cub-cartoon-icon-illustration_138676-2839.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 150px;
+            padding-top: 0px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #318CE7; /* Blue button color */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #2366C9; /* Darker blue on hover */
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #bbb; /* Light gray footer text */
+        }
+
+        .buttonss {
+            margin-top: 400px; /* Adjusted margin top for button */
+        }        
+    </style>
+</head>
+<body>
+    <h1>Cartoonize Your World!....</h1>
+    <div class="container">
+        <div class="buttonss">
+            <a href="{{ url_for('login') }}" class="btn">Click Here to Login/Signin</a>
+        </div>
+    </div>
+</body>
+</html>
