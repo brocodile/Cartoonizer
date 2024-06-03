@@ -9,3 +9,16 @@ scikit-video==1.1.11
 tf_slim==1.1.0
 PyYaml==5.3.1
 flask-ngrok
+jinja2==3.0.3
+itsdangerous==2.0.1
+protobuf==3.20.*
+numpy==1.19.*
+matplotlib
+flask_sqlalchemy 
+flask_login 
+flask_bcrypt 
+flask_wtf 
+wtforms 
+email_validator
+Werkzeug==2.0.0
+SQLAlchemy==1.4
