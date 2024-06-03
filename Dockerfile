@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y \
     libsm6 \
     libxext6 \
     libxrender-dev \
-    ffmpeg
+    ffmpeg \
+    libgl1-mesa-glx
 # Install production dependencies.
 RUN pip install -r requirements.txt
 
