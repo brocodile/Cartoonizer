@@ -2,7 +2,7 @@
 
 > Convert images and videos into a cartoon!
 
-The webapp is deployed here - https://cartoonize-lkqov62dia-de.a.run.app
+The webapp is deployed here - https://cartoonizer.onrender.com
 <div style="text-align:center"><img height="100" alt="Powered by Algorithmia" style="border-width:0" src="static/sample_images/algorithmia.jpeg" /></div>
 
 You can find a writeup on this webapp's architecture [here](https://medium.com/@Niraj_pandkar/how-we-built-an-inexpensive-scalable-architecture-to-cartoonize-the-world-8610050f90a0)!
@@ -55,7 +55,7 @@ To learn more on how to deploy your model in Algorithmia, check here - https://a
 - Cuda version 10.1
 - OS: Linux (Ubuntu 18.04)
 
-### Using Docker
+### Using Docker to build yourself
 
 The easiest way to get the webapp running is by using the Dockerfile:
 
@@ -68,6 +68,17 @@ docker build -t cartoonize .
 2. Run the container by exposing the appropriate ports
 ```
 docker run -p 8080:8080 cartoonize
+```
+
+#### import built docker image
+deplyed in docker hub - https://hub.docker.com/r/dakalt89/cartoonizer
+
+```
+docker pull dakalt89/cartoonizer
+```
+
+```
+docker run -p 8080:8080 cartoonizer
 ```
 
 
